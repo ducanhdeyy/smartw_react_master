@@ -16,16 +16,17 @@ const items = [
   { label: 'Ngày đến ngày', component: DateRangeComponent },
 ];
 
-
 const ReportComponent = ({ label }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleTabChange = (e) => {
-    setActiveIndex(e.index);
+    setActiveIndex(e.index);  
   };
 
+  
+
   const ActiveComponent = items[activeIndex].component;
-  const activeLabel = items[activeIndex].label;
+  
 
   return (
     <div>
@@ -33,9 +34,10 @@ const ReportComponent = ({ label }) => {
       <div className="card pl-3">
         <TabMenu model={items.map(item => ({ label: item.label }))} activeIndex={activeIndex} onTabChange={handleTabChange} />
       </div>
-      <ActiveComponent activeLabel={activeLabel} />
+      <ActiveComponent />
     </div>
   );
 };
 
 export default ReportComponent;
+

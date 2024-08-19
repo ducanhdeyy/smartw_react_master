@@ -1,0 +1,19 @@
+.p-frozen-column{
+    border: 1px solid #e9ecef;
+}
+
+.p-datatable .p-datatable-thead > tr > th{
+    border-width: 1px;
+    color: black !important;
+}
+
+
+.p-datatable .p-datatable-tbody > tr > td{
+    border-width: 1px;
+    text-align: center;
+}
+.p-datatable .p-column-header-content{
+    display: block;
+    text-align: center;
+}
+

@@ -40,7 +40,7 @@ export default function DateRangeComponent() {
 
     return (
         <form>
-            <div className="card-selector justify-content-center pl-4 mt-3">
+            <div className="card-selector justify-content-center pl-4 mt-5">
                 <b className='mr-5'>Trung tâm</b>
                 <Dropdown
                     value={selectedCity}

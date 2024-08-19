@@ -5,7 +5,6 @@ import Province from "../views/Report/Province/province";
 import Room from "../views/Report/Room/room";
 import Station from "../views/Report/Station/station";
 
-
 const Report = [
   {path: '/report/nest', component: Nest},
   {path: '/report/district',component: District},
